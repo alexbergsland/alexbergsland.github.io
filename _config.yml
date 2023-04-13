@@ -19,7 +19,7 @@ timezone: Europe/Stockholm
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Code                          # the main title
+title: code.bergsland.se                          # the main title
 
 tagline: My code snippets   # it will display as the sub-title
 
