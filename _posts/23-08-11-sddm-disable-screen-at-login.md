@@ -8,7 +8,7 @@ tags: [sddm,display_manager,login,monitor]
 I have dual monitors but SDDM shows the cursor on the right monitor but the left one i the main monitor.<br>
 These changes will disable the right monitor at login and then enable it when the desktop environments starts.<br><br>
 
-## First steps
+## The first steps
 
 Check `/etc/sddm.conf` for
 ```bash
@@ -37,7 +37,7 @@ HDMI-A-0 connected 1920x1080+1920+0 (normal left inverted right x axis y axis) 5
 ```
 My main monitor is `DisplayPort-0` and the secondary one is `HDMI-A-0`
 
-## Making some scripts
+## Making some scripts changes
 
 ```bash
 sudo nano /etc/sddm/Xsetup
@@ -48,7 +48,6 @@ sudo nano /etc/sddm/Xsetup
 # Xsetup - run as root before the login dialog appears
 xrandr --output HDMI-A-0 --off
 xrandr --output DisplayPort-0 --mode 1920x1080 --pos 0x0 --rotate normal --rate 144
-
 ```
 
 Also make a script in you home directory (or where ever)
