@@ -73,7 +73,6 @@ and add this at the end:
 
 ```bash
 [output:HDMI-A-1]
-mode = 1920x1080@60
-transform = 270
+transform = 90
 ```
 Reboot.
