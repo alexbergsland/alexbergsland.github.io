@@ -34,6 +34,9 @@ cd ..
 git clone https://github.com/heskja/MMM-CalendarWeek
 cd MMM-CalendarWeek
 npm install
+npm install valid-url --save
+npm install request --save
+npm install rrule-alt --save
 cd ..
 #
 git clone https://github.com/timdows/MMM-JsonTable
@@ -61,3 +64,16 @@ cd MMM-Skolmaten
 npm install
 cd ..
 ```
+
+# Rotate the display
+
+For Raspberry 4 and Wayland.
+Edit `.config/wayfire.ini`
+and add this at the end:
+
+```bash
+[output:HDMI-A-1]
+mode = 1920x1080@60
+transform = 270
+```
+Reboot.
